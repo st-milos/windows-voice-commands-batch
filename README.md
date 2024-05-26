@@ -21,7 +21,7 @@ On Windows you may run into SSL error when fetching the model for the first time
 Other configuration options should be self-explanatory.
 
 ### Built-in Commands
-You are intended to create your own commands, but there are some example built-in commands, currently:
+You are meant to create your own commands, but there are some example built-in commands, currently:
 - "Google {topic}" will open Chrome and google for a topic.
 - "Run {program name}" edit the `wvc_commands/run.bat` to add running logic for programs you need.
 
