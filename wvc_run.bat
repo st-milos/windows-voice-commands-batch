@@ -6,7 +6,7 @@ call .\wvc_config.bat
 :: Speech to text
 
 start /wait "" "ffmpeg" -f dshow -y -i audio="%wvc_recording_device%" -t %wvc_recording_seconds% wvc.m4a
-start /wait "" "whisper" .\wvc.m4a --model %wvc_whisper_model% --language %wvc_whisper_language% --suppress_tokens=0,11,13,30 --output_format txt %wvc_options%
+start /wait "" "whisper" .\wvc.m4a --model %wvc_whisper_model% --language %wvc_whisper_language% --suppress_tokens=0,11,13,30 --output_format txt %wvc_whisper_options%
 set /p wvc_command=< wvc.txt
 echo %wvc_command%
 
@@ -31,5 +31,5 @@ echo %wvc_subject%
 
 call .\wvc_commands\%wvc_action%
 
-pause
+:: Uncommed to debug: pause
 
