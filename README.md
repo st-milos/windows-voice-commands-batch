@@ -4,6 +4,8 @@ Clunky but private and configurable system for voice commands on Windows using b
 
 To overcome bad piping support in Windows, this script makes voice capture and voice recognition dependencies communicate by writing files. 
 
+**In essence:** this routes first spoken word to a batch script of the same name and provides the rest of the sentence as a variable to do with as you please.
+
 ### Dependencies
 - ffmpeg for capturing input. May be replaced by altering line 8 of `wvc_run.bat`. The replacement must output `wvc.m4a` file in the same directory.
 - OpenAI Whisper for voice recognition run locally. May be replaced by altering line 9 of `wvc_run.bat`. The replacement must output the text without punctuation symbols into `wvc.txt` file in the same directory. One easy way to install Whisper is with Python 3 and pip `pip install -U openai-whisper`.
