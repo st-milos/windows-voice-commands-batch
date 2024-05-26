@@ -31,5 +31,5 @@ echo %wvc_subject%
 
 call .\wvc_commands\%wvc_action%
 
-:: Uncommed to debug: pause
+:: Uncomment to debug: pause
 
